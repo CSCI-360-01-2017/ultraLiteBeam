@@ -1,0 +1,118 @@
+.purpGrad {
+  -fx-background-color:
+    linear-gradient(#5A67C4, #863093);
+}
+
+.timeStyle {
+  -fx-text-fill: white;
+  -fx-font: arial;
+  -fx-font-size: 72px;
+  -fx-text-alignment: CENTER;
+  -fx-alignment: CENTER;
+  -fx-padding: 69px;
+  -fx-font-style: italic;
+}
+
+.clockContainer {
+  -fx-alignment: CENTER;
+
+}
+
+.clockCircle {
+  -fx-alignment: CENTER;
+}
+
+.buttonContainer {
+  -fx-padding: 20px;
+}
+
+.coolButtons {
+  -fx-background-color: rgba(0,0,0,0);
+  -fx-padding: 25px 100px 25px 100px;
+  -fx-margin: 20px;
+  -fx-border-width: 5px;
+  -fx-border-color: white;
+  -fx-font: arial;
+  -fx-text-fill: white;
+  -fx-font-size: 36px;
+  -fx-border-radius: 15px;
+}
+
+.coolButtons.active{
+  -fx-background-color: rgba(200,200,200,.8);
+  -fx-background-radius: 15px;
+}
+
+.radioPlayerContainer {
+  -fx-padding: 75px;
+  -fx-alignment: CENTER;
+}
+.radioPlayerContainer .button{
+  -fx-background-color: rgba(0,0,0,0);
+  -fx-padding: 25px 50px 25px 50px;
+  -fx-font: arial;
+  -fx-text-fill: white;
+  -fx-font-size: 36px;
+}
+
+.radioPlayerContainer .button.first {
+  -fx-background-radius: 15px 0px 0px 15px;
+  -fx-border-width: 5px;
+  -fx-border-radius: 15px 0px 0px 15px;
+  -fx-border-color: white;
+}
+
+.radioPlayerContainer .button.last {
+  -fx-background-radius: 0px 15px 0px 15px;
+  -fx-border-width: 5px;
+  -fx-border-radius: 0px 15px 15px 0px;
+  -fx-border-color: white;
+}
+
+.radioPlayerContainer .button.display{
+  -fx-border-width: 5px 0px 5px 0px;
+  -fx-border-color: white;
+}
+.volumeSliderContainer {
+  -fx-padding: 50px;
+  -fx-alignment: CENTER;
+}
+.volumeSlider {
+  -fx-pref-width: 300px;
+}
+
+.alarmSettingsContainer{
+  -fx-background-color: rgba(138,138,138,.5);
+  -fx-border-width: 15px;
+  -fx-border-color: white;
+  -fx-border-radius: 15px;
+  -fx-background-radius: 15px;
+
+}
+
+.alarmSettingsHead{
+  -fx-text-fill: white;
+  -fx-font-size: 69px;
+  -fx-padding: 20px;
+}
+
+.alarmTimeTable{
+  -fx-text-alignment: CENTER;
+  -fx-alignment: CENTER;
+
+}
+
+.alarmTimeText{
+  -fx-font: arial;
+  -fx-font-size: 36px;
+  -fx-text-alignment: CENTER;
+  -fx-text-fill: white;
+
+}
+.alarmSetButtonsContainer{
+  -fx-alignmnet: CENTER;
+}
+.alarmSetButtons {
+  -fx-alignment: CENTER;
+  -fx-padding: 50px;
+}

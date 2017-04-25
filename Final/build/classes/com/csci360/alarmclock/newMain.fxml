@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="600.0" style="-fx-background-color: #cfcfcf;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csci360.alarmclock.UIController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="553.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="timeDisplay" text="XX:XX Xm" />
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <VBox alignment="CENTER" prefHeight="95.0" prefWidth="600.0">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Button fx:id="snoozeBtn" mnemonicParsing="false" text="Snooze" />
+                        <Button fx:id="dismissBtn" layoutX="276.0" layoutY="10.0" mnemonicParsing="false" text="Dismiss" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="159.0" prefWidth="600.0">
+                     <children>
+                        <Label fx:id="notificationLabel" alignment="CENTER" text="Welcome." />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="79.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="radioFeedBack" text="Radio off" textAlignment="CENTER" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="decreaseFrequencyBtn" mnemonicParsing="false" text="&lt;" />
+                        <Button fx:id="radioDisplay" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefWidth="125.0" text="80.8 am" textAlignment="CENTER" />
+                        <Button fx:id="increaseFrequencyBtn" mnemonicParsing="false" text="&gt;" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <ToggleButton fx:id="radioOnOff" mnemonicParsing="false" text="Radio Off" />
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER_LEFT" prefHeight="208.0" prefWidth="600.0">
+               <children>
+                  <Pane prefHeight="223.0" prefWidth="296.0">
+                     <children>
+                        <CheckBox fx:id="alarm1ActiveBox" layoutX="91.0" layoutY="140.0" mnemonicParsing="false" text="Alarm Active" />
+                        <Button fx:id="setAlarm1Btn" layoutX="119.0" layoutY="104.0" mnemonicParsing="false" text="Set" />
+                        <TextField fx:id="alarm1TextBox" alignment="CENTER" layoutX="55.0" layoutY="69.0" promptText="HH:MM:SS" />
+                        <Label fx:id="alarm1Display" alignment="CENTER" contentDisplay="CENTER" layoutX="97.0" layoutY="14.0" prefHeight="48.0" prefWidth="78.0" text="Time" textAlignment="CENTER" />
+                        <Label layoutX="14.0" layoutY="14.0" text="Alarm 1" />
+                        <ToggleButton fx:id="alarmRadioToggle1" layoutX="99.0" layoutY="165.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Alarm" />
+                     </children>
+                  </Pane>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <Pane layoutX="10.0" layoutY="10.0" prefHeight="183.0" prefWidth="296.0">
+                     <children>
+                        <CheckBox fx:id="alarm2ActiveBox" layoutX="83.0" layoutY="143.0" mnemonicParsing="false" text="Alarm Active" />
+                        <Button fx:id="setAlarm2Btn" layoutX="111.0" layoutY="104.0" mnemonicParsing="false" text="Set" />
+                        <TextField fx:id="alarm2TextBox" alignment="CENTER" layoutX="53.0" layoutY="69.0" promptText="HH:MM:SS" />
+                        <Label fx:id="alarm2Display" alignment="CENTER" contentDisplay="CENTER" layoutX="88.0" layoutY="21.0" prefHeight="48.0" prefWidth="78.0" text="Time" textAlignment="CENTER" />
+                        <Label layoutX="18.0" layoutY="12.0" text="Alarm 2" />
+                        <ToggleButton fx:id="alarmRadioToggle2" layoutX="89.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Alarm" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>
